@@ -9,10 +9,8 @@
   "scripts": {
     "build": "webpack -p",
     "start": "webpack --watch",
-    "test": "npm run mocha && npm run hint && npm run cs",
-    "mocha": "mocha --reporter spec --compilers js:babel-register",
-    "hint": "jshint --config .jshintrc index.js lib/* test/*",
-    "cs": "jscs --config .jscsrc index.js lib/* test/*"
+    "test": "npm run mocha",
+    "mocha": "mocha --reporter spec --compilers js:babel-register"
   },
   "repository": {
     "type": "git",

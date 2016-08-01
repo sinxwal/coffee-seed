@@ -41,7 +41,7 @@ module.exports = {
         new webpack.NoErrorsPlugin(),
         new webpack.optimize.DedupePlugin(),
         new ExtractTextPlugin('bundle.css'),
-        new webpack.optimize.UglifyJsPlugin({
+        /*new webpack.optimize.UglifyJsPlugin({
             sourceMap: false,
             mangle: false,
             compress: {
@@ -50,7 +50,7 @@ module.exports = {
             output: {
                 comments: false,
             }
-        })
+        })*/
     ],
     stats: { colors: true },
     devServer: {
