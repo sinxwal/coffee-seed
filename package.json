@@ -1,0 +1,54 @@
+{
+  "name": "coffee-seed",
+  "version": "0.0.5",
+  "description": "Coffee drinking app",
+  "main": "bin/app.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "build": "webpack -p",
+    "start": "webpack --watch",
+    "test": "npm run mocha && npm run hint && npm run cs",
+    "mocha": "mocha --reporter spec --compilers js:babel-register",
+    "hint": "jshint --config .jshintrc index.js lib/* test/*",
+    "cs": "jscs --config .jscsrc index.js lib/* test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinxwal/playground.git"
+  },
+  "author": "Sergey Chovrebov <sinxwal@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sinxwal/playground/issues"
+  },
+  "homepage": "https://github.com/sinxwal/playground",
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-register": "^6.11.6",
+    "bootstrap-webpack": "0.0.5",
+    "chai": "^3.5.0",
+    "expose-loader": "^0.7.1",
+    "mocha": "^2.5.3",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.1",
+    "babel-polyfill": "^6.9.1",
+    "bootstrap": "^3.3.7",
+    "exports-loader": "^0.6.3",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "imports-loader": "^0.6.5",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "store2": "^2.3.2",
+    "style-loader": "^0.13.1",
+    "tag-cloud": "^1.1.2",
+    "tingle.js": "^0.7.2",
+    "url-loader": "^0.5.7"
+  }
+}
